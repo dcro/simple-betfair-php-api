@@ -46,7 +46,7 @@ try {
 }
 ```
 
-A more complex request example, to get the market catalogue for a specific event type (`<your-event-type-id>`) from in Great Britain and for the `WIN` market.
+A more complex request example, to get the market catalogue for a specific event type (`<your-event-type-id>`) from Great Britain and for the `WIN` market.
 
 ```php
 try {
