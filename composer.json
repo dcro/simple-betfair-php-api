@@ -3,7 +3,6 @@
     "type"       : "library",
     "description": "A simple PHP implementation for Betfair's API (API-NG)",
     "keywords"   : ["Betfair", "API", "API-NG", "JSON-RPC"],
-    "homepage"   : "http://www.danieledangeli.com",
     "license"    : "GPLv2",
 
     "authors": [
