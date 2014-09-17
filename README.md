@@ -31,7 +31,7 @@ $configuration = array(
     'cert'     => '/path/to/your/certificate.pem',
 )
 
-$api = Betfair\SimpleAPI($configuration);
+$api = new Betfair\SimpleAPI($configuration);
 ```
 
 To make a request against the API endpoint, call the `request()` method like this:
