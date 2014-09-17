@@ -26,5 +26,6 @@
  */
 
 namespace Betfair;
+use Exception;
 
 class SimpleAPIException extends Exception {}
