@@ -60,6 +60,30 @@ class SimpleAPI
      * @param array $configuration The Betfair configuration options
      */
     public function __construct($configuration) {
+        if (!function_exists('curl_version')) {
+            throw new SimpleAPIException('The PHP curl extension is not installed. This extension is required to be able to use the API.');
+        }
+
+        if (!isset($configuration['username'])) {
+            throw new SimpleAPIException('The API username is missing from the configuration options');
+        }
+
+        if (!isset($configuration['password'])) {
+            throw new SimpleAPIException('The API password is missing from the configuration options');
+        }
+
+        if (!isset($configuration['appKey'])) {
+            throw new SimpleAPIException('The API application key is missing from the configuration options');
+        }
+
+        if (!isset($configuration['cert'])) {
+            throw new SimpleAPIException('The API certificate path is missing from the configuration options');
+        }
+
+        if (!is_readable($configuration['cert'])) {
+            throw new SimpleAPIException('The API certificate file does not exist or is not readable');
+        }
+
         $this->configuration = $configuration;
     }
 
