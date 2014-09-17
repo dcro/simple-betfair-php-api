@@ -131,7 +131,7 @@ class SimpleAPI
 
         // If no sessionToken was found, throw an exception
         if (empty($response->sessionToken)) {
-            throw new SimpleAPIException('Could not get a session token from the login endpoint');
+            throw new SimpleAPIException('Could not get a valid session token from the login endpoint (check your configuration options)');
         }
 
         // Set the cached session token & return it
