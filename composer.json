@@ -1,0 +1,25 @@
+{
+    "name"       : "dcro/simple-betfair-php-api",
+    "type"       : "library",
+    "description": "A simple PHP implementation for Betfair's API (API-NG)",
+    "keywords"   : ["Betfair", "API", "API-NG", "JSON-RPC"],
+    "homepage"   : "http://www.danieledangeli.com",
+    "license"    : "GPLv2",
+
+    "authors": [
+        {
+            "name"    : "Dan Cotora",
+            "email"   : "d@bluevision.ro",
+            "role"    : "Developer"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3.0"
+    },
+
+    "autoload": {
+        "psr-0": { "Betfair": "src/" }
+    }
+
+}
