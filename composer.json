@@ -3,7 +3,7 @@
     "type"       : "library",
     "description": "A simple PHP implementation for Betfair's API (API-NG)",
     "keywords"   : ["Betfair", "API", "API-NG", "JSON-RPC"],
-    "license"    : "GPLv2",
+    "license"    : "GPL-2.0+",
 
     "authors": [
         {
